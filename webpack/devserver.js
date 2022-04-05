@@ -5,6 +5,8 @@ module.exports = function(){
 			//hot: true, //Это указание на то что мы используем горячую замену модулей Hot Module Replacement при ней может (и скороее всего так и случится) отключится live reload
 			stats: 'errors-only',//Теперь в косноли будут вылезать только ошибки
 			port: 9003,//теперича сайт будет открываться на 9000 порту
+			overlay: true,
+	    open: true
 		}
 	}
 }
