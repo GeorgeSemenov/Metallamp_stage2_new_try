@@ -1,0 +1,20 @@
+.pagination__item_navigate {
+  background-image: $paginationNavigationActive--BGImage;
+  position: relative;
+    &::after{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include centered;
+  }
+
+  @include media-breakpoint-down(md) {
+    top: 9px;
+  }
+}

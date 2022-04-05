@@ -1,0 +1,11 @@
+.checkbox-list__label-wrapper {
+  margin-left: 10px;
+  position: relative;
+  top: -1px;
+  left: 0;
+  font-family: 'montserrat' ,arial , sans-serif;
+  font-size: 14px;
+  color: $checkboxList__labelWrapper--color;
+  line-height: 18px;
+  flex-grow: 1;
+}

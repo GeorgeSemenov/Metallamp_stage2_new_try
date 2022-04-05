@@ -1,0 +1,13 @@
+.tag-block__tag-name {
+  font-family: 'montserrat' ,arial , sans-serif;
+  font-size: inherit;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 24px;
+  line-height: inherit;
+  //Чтобы выравнивать все tag-name по правому краю
+  width: 50px;
+  text-align: right;
+}
+

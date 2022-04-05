@@ -1,0 +1,11 @@
+.button_transparent_with-border {
+  @include button_transparent_with-border(
+    $button_transparent--borderColor,
+    $button_transparent--color,
+    $border-width_transparent,
+    ".button__text",
+    $normal-size-width,
+    $normal-size-vertical-padding,
+    $border-radius,
+    $button_transparent--BGColor);
+}

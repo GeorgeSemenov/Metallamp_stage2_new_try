@@ -1,0 +1,18 @@
+.text-field__menu-wrapper{
+  position: absolute;
+  //элементы в меню с cursor: pointer при случайном
+  //наведении на них будут изменять курсор.
+  z-index: 1;
+  top: 43px;
+  left: 0;
+  opacity: 0;
+  font-weight: bold;
+  visibility: hidden;
+  width: 100%;
+  background-color: $textField__menuWrapper--BGColor;
+  border: 1px solid $textField__menuWrapper--borderColor;
+  transition: all .25s ease;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  border-radius: 4px;//Это свойство необходимо, иначе
+}

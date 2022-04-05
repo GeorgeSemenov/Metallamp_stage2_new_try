@@ -1,0 +1,8 @@
+.text-field_placeholder-color_dark {
+
+  .text-field__input{
+    &::placeholder{
+      color: $textField__input_dark--color;
+    }
+  }
+}
