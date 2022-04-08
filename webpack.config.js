@@ -1,7 +1,7 @@
 const path = require ('path');
 const webpack = require('webpack');//Это нужно что бы появилась возможность выделить код webpack из кода js файлов (index.js и blog.js), для этого мы будем использовать метод optimize
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const merge = require('webpack-merge');//Этот модуль нужен чтобы в webpack.config.js склеивать различные модули, вместо object.assign - теперь кажыдй модуль можно записать в другой файл (как pug.js) и подключить к webpack.config.js
+const {merge} = require('webpack-merge');//Этот модуль нужен чтобы в webpack.config.js склеивать различные модули, вместо object.assign - теперь кажыдй модуль можно записать в другой файл (как pug.js) и подключить к webpack.config.js, вместо него можно использовать Object.assign(), но webpack-merge не перезаписывает одноимённые свойства в объединяемых объектах, а дополняет их, а Object.assign - перезаписывает
 const pug = require ('./webpack/pug');//Подключаем модуль с pug для webpack.config.js ,кстати можно не указывать .js webpack и так всё понимает
 const devserver = require('./webpack/devserver');
 const sass = require('./webpack/sass');//Напомню, что сами стили(допустим blog.scss) нужно подключать через соответствеющие js файлы (blog.js)
@@ -15,7 +15,7 @@ const PATHS = {//Объект с двумя свойствами
 	build: path.join(__dirname, 'build')
 };
 
-const common= merge([//модуль merge -  заменяет метод assign т.к. он более наглядный, мы просто передаём массив объектов, которые нужно склеить.
+const common= merge([//модуль merge -  заменяет метод Objects.assign т.к. он более наглядный, мы просто передаём массив объектов, которые нужно склеить.
 	{//Первый объект
 		mode:'',//Специально не корректно инициализируем параметр mode, т.к. его мы будем инициализировать в последнюю очередь см функцию module.exports
 		entry: {

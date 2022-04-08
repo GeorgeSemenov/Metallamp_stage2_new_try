@@ -6,11 +6,12 @@
   "scripts": {
     "build": "webpack --env production",
     "watch": "webpack --watch",
-    "start": "./node_modules/.bin/webpack serve ",
+    "start": "webpack serve ",
     "serv": "static build",
     "version": "webpack -v"
   },
   "devDependencies": {
+    "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "imagemin-gifsicle": "^7.0.0",
@@ -42,7 +43,6 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "air-datepicker": "^3.1.1",
-    "css-loader": "^6.7.1"
+    "air-datepicker": "^3.1.1"
   }
 }
