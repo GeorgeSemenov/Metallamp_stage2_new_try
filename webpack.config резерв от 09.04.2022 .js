@@ -50,33 +50,35 @@ const common= merge([//модуль merge -  заменяет метод Objects
 	fonts()
 ]);
 
-module.exports = function(env,argv){
+const developmentConfig ={
+	devServer: {//Можно легко изменить порт, по которому будет находиться сайт и куча других настроек в пункте dev-server
+		contentBase:'./build',//Указываем директорию, откуда будет строиться сайт на локальном сервере(по умолчанию сразу по адрессу localhost:8080 будет выводиться index.html), если в этой папке будет, например, blog.html , то эта страница будет доступна по https://localhost/blog.html
+		hot: true, //Это указание на то что мы используем горячую замену модулей Hot Module Replacement
+		stats: 'errors-only',//Теперь в косноли будут вылезать только ошибки
+		port: 9000,//теперича сайт будет открываться на 9000 порту
+		watchContentBase: true
+	}
+};
+
+module.exports = function(env){
 	//Напомню что mode:production автоматически минифицирует код.
-	common.mode = argv.mode;//Инициализируем режим development или prodaction в объекте common чтобы webpack знал как собирать проект, если эту строку убрать, то консоль выдаст ошибку, т.к. объект common инициализировани не в соотвествии с API webpack'a(т.к. там некорректно инициализирован ключ mode)
-	if (argv.mode === 'production'){// argv.mode - параметр который передаётся в npm scripts - загляни в package.jsone
+	common.mode = env;//Инициализируем режим development или prodaction в объекте common чтобы webpack знал как собирать проект, если эту строку убрать, то консоль выдаст ошибку, т.к. объект common инициализировани не в соотвествии с API webpack'a(т.к. там некорректно инициализирован ключ mode)
+	if (env === 'production'){// env - параметр который передаётся в npm scripts - загляни в package.jsone
 		common.devtool = false;//сорсмап создаваться не будет
 		return merge([
 			common,
 			extractCss(),//Отделяем файлы стилей в продакшене, хотя ничто не мешает это делать в common(т.е. всегда), напоминаю этот модуль заменяет собой style-loader, т.е. теперь стили не будут писаться инлайно в html файле, а будут вынесены в отдельный файлик.
 		])
 	}
-	if (argv.mode === 'development'){
-		// common.devtool = 'eveal-sourcemap';//Будет создаваться сорсмап
+	if (env === 'development'){
+		//return Object.assign(//Метод assign нужен чтобы склеивать объекты. Он принимает три аргумента
+			//{},//Первый аргумент assign должен быть пустым объектом, как я понимаю туда будут записываться два других объекта.
+		common.devtool = 'eveal-sourcemap';//Будет создаваться сорсмап
 		return merge([//модуль merge -  заменяет метод assign см выше в комменатриях , т.к. он более наглядный, мы просто передаём массив объектов, которые нужно склеить.
-			{
-				entry: {
-            main: path.resolve(__dirname, './source/index.js'),
-        },
-        output: {
-            path: path.resolve(__dirname, './dist'),
-            filename: '[name].bundle.js',
-        }
-			},
-			// common,//Второй и третий аргументы - объекты которые должны быть склеены
+			common,//Второй и третий аргументы - объекты которые должны быть склеены
 			devserver(),//Подключаем модуль devserver, который у нас инициализирван файлом (см выше в самом начале), в котором есть описание этого плагина
 			sass(),
-			css(),
+			css()
 		])
 	}
-
 };
