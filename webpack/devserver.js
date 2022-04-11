@@ -1,3 +1,4 @@
+const path = require ('path');
 module.exports = function(){
 	return {
 		devServer: {//Можно легко изменить порт, по которому будет находиться сайт и куча других настроек в пункте dev-server
@@ -5,7 +6,7 @@ module.exports = function(){
 			//hot: true, //Это указание на то что мы используем горячую замену модулей Hot Module Replacement при ней может (и скороее всего так и случится) отключится live reload
 			// stats: 'errors-only',//Теперь в косноли будут вылезать только ошибки
 			static: {
-        directory: path.join(__dirname, 'dist'),
+        directory: path.join(__dirname, './dist'),
       },
 			port: 9003,//теперича сайт будет открываться на 9000 порту
 	    open: true, //при запуске девсервера браузер, выбранный по умолчанию откроется автоматически
