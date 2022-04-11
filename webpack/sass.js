@@ -9,21 +9,12 @@ module.exports = function(paths){//pathc - необходим, т.к. sass-loade
 						//Напомню - к файлам, которые подходят под regexp писаным в test: будут применены лоадеры начиная назшим и заканчивая высшим , или с права на лево.
 						{//добавляет css стили в DOM дерево при помощи тега style и при этом ещё подгружает sourcemap
 							loader: 'style-loader',
-							options:{
-								sourceMap: true,
-							}
 						},
 						{//добавляет css модули в град зависисмостей
 							loader: 'css-loader',
-							options:{
-								sourceMap: true,
-							}
 						},
 						{//компилирует scss в css
 							loader: 'sass-loader',
-							options:{
-								sourceMap: true,
-							}
 						},
 					]
 				}

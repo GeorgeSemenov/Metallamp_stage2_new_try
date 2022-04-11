@@ -24,11 +24,12 @@
     "jquery": "^3.6.0",
     "lint-staged": "^12.3.7",
     "mini-css-extract-plugin": "^2.6.0",
-    "node-sass": "^7.0.1",
     "node-static": "^0.7.11",
     "prettier": "^2.6.2",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
+    "sass": "^1.50.0",
+    "sass-loader": "^12.6.0",
     "source-map-loader": "^3.0.1",
     "style-loader": "^3.3.1",
     "stylelint": "^14.6.1",
@@ -43,6 +44,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.5",
     "air-datepicker": "^3.1.1"
   }
 }

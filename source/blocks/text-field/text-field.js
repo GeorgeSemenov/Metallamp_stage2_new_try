@@ -1,4 +1,4 @@
-import '../../../node_modules/air-datepicker/dist/js/datepicker.min.js';
+// import '../../../node_modules/air-datepicker/dist/js/datepicker.min.js';
 /*Для того чтобы при нажатии только на 
 тогглер(стрелочка вниз) вызывался бы datepicker
 */
