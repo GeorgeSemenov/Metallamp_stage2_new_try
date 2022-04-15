@@ -25,6 +25,7 @@ $ npm run start
 3. Сторонние модули
 - datepicker 
 - simplePagination
+- Webpack
 
 ## Авторы
 *Семенов Георгий*
