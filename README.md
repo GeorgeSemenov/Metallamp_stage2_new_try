@@ -23,9 +23,9 @@ $ npm run start
 - JQuery
 - bootstrap
 3. Сторонние модули
-- datepicker 
-- simplePagination
-- Webpack
+- [airdatepicker](https://air-datepicker.com/ru)
+- [simplePagination](https://flaviusmatis.github.io/simplePagination.js/)
+- [Webpack](https://webpack.js.org/)
 
 ## Авторы
 *Семенов Георгий*
