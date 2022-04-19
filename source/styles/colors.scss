@@ -12,7 +12,8 @@ $gray-darkest: rgba(31,32,65,1);
 $purple: #BC9CFF;
 $velvet: #A4A0FC;
 $green: #6FCF97;
-$white: #fff;
+$white: #fff;//Не удалять, используется в global.css
+$black: #000;//Не удалять, используется в global.css
 $navyBlue: #214472;// Тёмно синий
 $pink: #bc9cff;
 
@@ -42,77 +43,4 @@ $colorBlock__colorSquare_green--BGColor: $green;
 $colorBlock__colorSquare_purple--BGColor: $purple;
 $colorBlock__textWrapper_textDecoration--color: $gray-darkest;
 
-$checkboxList__labelWrapper--color: $gray;
-
-$checkbox_unchecked--BGColor: $gray-lighter;
-$checkbox_checked--BGColor: $purple;
-$checkbox__innerSpace--BGColor: $white;
-
-$radioButtonsList__inputChecked--color: $gray-darker;
-$radioButtonsList__inputNotChecked--color: $gray;
-
-$optionalTitle__desc_color_whiteGray--color: $gray;
-
 $tagBlockNameColor_gray--color: $gray-lighter;
-
-$dropdownColorClearButton--color: $gray;
-
-$checkboxLabelColor_rich--color: $gray-darker;
-$checkboxBulletBackground--color: $gray-lighter;
-
-$rangeSliderDisplayedNumbers--color: $gray;
-$rangeSliderBorder--color: $gray-lighter;
-$rangeSliderKnob--background: $gradient-green;
-$rangeSliderKnob--border: $white;
-
-$uiWidgetHeader--BGColor: $navyBlue;
-
-$button--BGColor: $gradient-purple;
-$button_colored_purple--color: $white;
-$button_transparent--color: $purple;
-$button_transparentActive--color: $gray;
-$button_transparent--borderColor: $gradient-purple;
-$button_transparent--BGColor: $white;
-
-$likeColor_transparentWithBorder--color: $gray-lighter;
-$likeButton_transparentWithBorder_pressed--color: $purple;
-$likeButton_transparent--borderColor: $gradient-gray-only;
-$likeButton_transparentWithBorder_pressed--BGImage: $gradient-purple;
-$likeButton_transparent--BGCollor: $white;
-$likeButtonImage--stroke: $gray-lighter;
-$likeButtonImage_pressed--fill: $purple;
-$likeButtonImage_pressed--stroke: $likeButtonImage_pressed--fill;
-
-$paginationActiveItem--BGImage: $gradient-gray-blue;
-$paginationActiveItemHover--BGImage: $gradient-gray-blue-faded;
-$paginationActiveItem--color: $white;
-$paginationItem--color: $gray;
-$paginationNavigationActive--BGImage: $gradient-green;
-
-$rateButtonStar--fill: $svg-gradient-purple; // include ../../components/svg-purple-gradient.pug
-$rateButtonStar--stroke: $svg-gradient-purple; // include ../../components/svg-purple-gradient.pug
-$rateButtonStar_faded--fill: $svg-gradient-purple_faded; // include ../../components/svg-purple-gradient.pug
-
-$advantageText--color: $gray-darker;
-
-$advantageListItemWrapper--borderBottomColor: $gray-muchMorelightest;
-
-$commentAvatar--color: $gray-darker;
-$commentTextArea--color: $gray-darker;
-
-$textField__buttonApply--color: $pink;
-$textField__input--BGColor: $white;
-$textField__input--color: $gray-darker;
-$textField__inputPlaceholder--color: $gray-lighter;
-$textField__input_dark--color: $gray-darker;
-$textField__input_date--color: $gray-lighter;
-$textField__mathOperation--color: $gray;
-$textField__menuWrapper--BGColor: $white;
-$textField__menuWrapper--borderColor: $gray-lighter;
-$textField__property--color: $gray;
-$textField__mathOperation--borderColor: $gray;
-
-$togglerWithLabel__knobBeforeChecked--background: $gradient-gray-blue;
-$togglerWithLabel__knobLine--BGColor: $white;
-$togglerWithLabel__knobLine--borderColor: $gray-lighter;
-$togglerWithLabel__knobLineChecked--borderColor: $pink;

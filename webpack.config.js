@@ -62,6 +62,7 @@ module.exports = function(env,argv){
 		])
 	}
 	if (argv.mode === 'development'){
+		common.target = "web";
 		// common.devtool = 'eveal-sourcemap';//Будет создаваться сорсмап
 		return merge([//модуль merge -  заменяет метод assign см выше в комменатриях , т.к. он более наглядный, мы просто передаём массив объектов, которые нужно склеить.
 			common,//Второй и третий аргументы - объекты которые должны быть склеены
