@@ -1,4 +1,13 @@
-.text-field {}
 @import '__title/text-field__title';
 @import '__description/text-field__description';
 @import '__input/text-field__input';
+
+.text-field {
+  font-family: 'Montserrat' ,"Arial" , "Sans-serif";
+  color: $text-field--Color;
+  font-size: 1.2rem;
+  line-height: 15px;
+  &_size-xs{
+    width: 320px;
+  }
+}

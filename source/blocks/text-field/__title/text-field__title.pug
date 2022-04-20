@@ -1,4 +1,7 @@
 mixin text-field__title(modifier)
   if modifier["title"] == undefined
     - modifier["title"] = "empty__title";
-  h3.text-field__title&attributes(attributes)!=modifier.title
+
+  if modifier["titleTag"] == undefined
+    - modifier["titleTag"] = "h3";
+  #{modifier.titleTag}.text-field__title&attributes(attributes)!=modifier.title

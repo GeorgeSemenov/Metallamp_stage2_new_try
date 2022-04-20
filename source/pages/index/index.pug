@@ -12,4 +12,9 @@ html(lang="ru")
     //- +form-and-elements()
     include ../../blocks/text-field/text-field.pug
     span cumpital2
-    +text-field({})
+    span loh
+    +text-field({
+      title: 'Text Field',
+      description: 'Default',
+      placeholder: 'Email'
+    })(class="text-field_size-xs")
