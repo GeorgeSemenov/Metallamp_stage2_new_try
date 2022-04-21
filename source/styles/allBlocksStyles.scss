@@ -1,8 +1,5 @@
 /* Компоненты */
 @import '../vendor/UnCss';/* т.к. он сбрасывает все стили */
-@import 'air-datepicker/air-datepicker.css';
-@import '../vendor/simplePagination/simplePagination';
-@import '~bootstrap/scss/bootstrap';
 
 /* Шрифты */
 
@@ -16,10 +13,10 @@
 
 
 /* Стили UIKit */
-@import '../blocks/color-and-type/color-and-type';
-@import '../blocks/brand-pic/brand-pic';
-@import '../blocks/color-block/color-block';
-@import '../blocks/tag-block/tag-block';
-@import '../blocks/form-and-elements/form-and-elements';
-@import '../blocks/header-UIKit/header-UIKit';
+// @import '../blocks/color-and-type/color-and-type';
+// @import '../blocks/brand-pic/brand-pic';
+// @import '../blocks/color-block/color-block';
+// @import '../blocks/tag-block/tag-block';
+// @import '../blocks/form-and-elements/form-and-elements';
+// @import '../blocks/header-UIKit/header-UIKit';
 @import '../blocks/text-field/text-field';

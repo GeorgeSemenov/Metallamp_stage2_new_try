@@ -1,0 +1,219 @@
+//Пути нужно указывать относительно scss файла, который будет в pages, допустим index.scss
+//font-family: 'grotescFont';
+// @import 'grotescFont/grotescFont';
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 900;
+  font-style: normal;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 800;
+  font-style: normal;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 700;
+  font-style: normal;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 600;
+  font-style: normal;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 500;
+  font-style: normal;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 400;
+  font-style: normal;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 300;
+  font-style: normal;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 200;
+  font-style: normal;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 100;
+  font-style: normal;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 900;
+  font-style: italic;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 800;
+  font-style: italic;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 700;
+  font-style: italic;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 600;
+  font-style: italic;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 500;
+  font-style: italic;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 400;
+  font-style: italic;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 300;
+  font-style: italic;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 200;
+  font-style: italic;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 100;
+  font-style: italic;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 900;
+  font-style: oblique;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 800;
+  font-style: oblique;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 700;
+  font-style: oblique;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 600;
+  font-style: oblique;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 500;
+  font-style: oblique;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 400;
+  font-style: oblique;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 300;
+  font-style: oblique;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 200;
+  font-style: oblique;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}
+@font-face {
+  font-family: 'grotescFont';
+  font-weight: 100;
+  font-style: oblique;
+  src:  local('☺'),
+        url('../../fonts/grotescFont/grotescFont.woff2') format('woff2'),
+        url('../../fonts/grotescFont/grotescFont.woff') format('woff');
+}

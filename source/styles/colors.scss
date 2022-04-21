@@ -17,6 +17,8 @@ $black: #000;//Не удалять, используется в global.css
 $navyBlue: #214472;// Тёмно синий
 $pink: #bc9cff;
 
+$dark: #1F2041;
+
 $gradient-green:linear-gradient(180deg,#6FCF97 0%, #66D2EA 100%);
 $gradient-purple: linear-gradient(180deg,#BC9CFF 0%, #8BA4F9 100%);
 $gradient-gray-blue: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -45,4 +47,4 @@ $colorBlock__textWrapper_textDecoration--color: $gray-darkest;
 
 $tagBlockNameColor_gray--color: $gray-lighter;
 
-$text-field--Color: $black;
+$text-field--Color: $dark;
