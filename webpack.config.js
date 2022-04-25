@@ -14,6 +14,7 @@ const PATHS = {//Объект с двумя свойствами
 	source: path.join(__dirname, 'source'),
 	build: path.join(__dirname, 'build')
 };
+console.log(`Знаешь ли ты что mode = ${argv.mode}`);
 
 const common= merge([//модуль merge -  заменяет метод Objects.assign т.к. он более наглядный, мы просто передаём массив объектов, которые нужно склеить.
 	{//Первый объект
