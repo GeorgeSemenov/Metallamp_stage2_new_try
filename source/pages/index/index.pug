@@ -10,9 +10,10 @@ html(lang="ru")
     //- include ../../blocks/form-and-elements/form-and-elements.pug
     //- +color-and-type()
     //- +form-and-elements()
+    include ../../components/pug/_libs.pug
     include ../../blocks/text-field/text-field.pug
     +text-field({
-      title: 'Text 16 Field',
+      title: 'Text Field',
       description: 'Default',
       placeholder: 'Email'
     })(class="text-field_size-xs")

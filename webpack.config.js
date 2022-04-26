@@ -14,7 +14,6 @@ const PATHS = {//Объект с двумя свойствами
 	source: path.join(__dirname, 'source'),
 	build: path.join(__dirname, 'build')
 };
-console.log(`Знаешь ли ты что mode = ${argv.mode}`);
 
 const common= merge([//модуль merge -  заменяет метод Objects.assign т.к. он более наглядный, мы просто передаём массив объектов, которые нужно склеить.
 	{//Первый объект
@@ -25,7 +24,8 @@ const common= merge([//модуль merge -  заменяет метод Objects
 		output: {
 			path: PATHS.build,//Устанавливаем путь, куда мы будем пихать наши обработанные файлы
 			publicPath: '/',//Устанавливаем путь, куда будет смотреть node сервер(да и наверное остальные) в данном случае он будет смотреть в localhost:8080(или другой порт это не важно)  и если ты указал изображение в images он будет смотреть в localhost:8080/images/menu.png а не в css/images/menu.png т.к. menu.png цепляется через menu.scss который складируется в css/ поэтому путь будет относительно css но public path это меняет чтобы webpack смотрел в корень сервера
-			filename: 'js/[name].js'//[name]  - плэйхолдер, в него будут автоматически подставляться имена точек входа
+			filename: 'js/[name][contenthash].js',//[name]  - плэйхолдер, в него будут автоматически подставляться имена точек входа
+			assetModuleFilename: "assets/[hash][ext][query]",//Все ресурсы помеченные как type:'asset', или type: 'asset/resource' будут сохраняться теперь в папку assets в папке build
 		},
 		plugins:[
 			new HtmlWebpackPlugin({// создаём страничку html
@@ -54,6 +54,7 @@ const common= merge([//модуль merge -  заменяет метод Objects
 module.exports = function(env,argv){
 	//Напомню что mode:production автоматически минифицирует код.
 	common.mode = argv.mode;//Инициализируем режим development или prodaction в объекте common чтобы webpack знал как собирать проект, если эту строку убрать, то консоль выдаст ошибку, т.к. объект common инициализировани не в соотвествии с API webpack'a(т.к. там некорректно инициализирован ключ mode)
+	console.log(`Знаешь ли ты что mode = ${argv.mode}`);
 	if (argv.mode === 'production'){// argv.mode - параметр который передаётся в npm scripts - загляни в package.jsone
 		common.devtool = false;//сорсмап создаваться не будет
 		common.output.publicPath = "./"; //Указываем нормальный пукть, чтобы сборка была человеческой
@@ -63,7 +64,7 @@ module.exports = function(env,argv){
 		])
 	}
 	if (argv.mode === 'development'){
-		// common.devtool = 'eveal-sourcemap';//Будет создаваться сорсмап
+		common.devtool = 'source-map';//Будет создаваться сорсмап, это значит, что когда ты вызовешь инструмент разработчика в браузере и посмотрищь на свойства элемента, то там будет прописанно, в каком конкретно файле прописанно это свойства, если не указать сорсмап, то все свйоства будут храниться в inline, т.к. в режиме разработки мы сохраняем их туда.
 		return merge([//модуль merge -  заменяет метод assign см выше в комменатриях , т.к. он более наглядный, мы просто передаём массив объектов, которые нужно склеить.
 			common,//Второй и третий аргументы - объекты которые должны быть склеены
 			devserver(),//Подключаем модуль devserver, который у нас инициализирван файлом (см выше в самом начале), в котором есть описание этого плагина
