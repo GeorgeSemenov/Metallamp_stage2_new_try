@@ -1,4 +1,4 @@
-https://georgesemenov.github.io/FSD_lesson2_UiKit/
+https://georgesemenov.github.io/Metallamp_stage2_new_try/
 https://stackedit.io/app#
 
 # FSD  frontend education programm. The 2nd task
